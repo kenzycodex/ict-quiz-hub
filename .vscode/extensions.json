@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "auchenberg.vscode-browser-preview",
+        "ms-vscode.live-server",
+        "jabedhossain.web-preview",
+        "ritwickdey.liveserver"
+    ]
+}

@@ -1,0 +1,171 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-secondary {
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calltoaction-20-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .form-12-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .banner-info h5 {
+    font-size: 28px;
+  }
+
+  .btn-secondary {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .footer-section {
+    width: 50%;
+  }
+
+  .footer-section h6 {
+    font-size: 16px;
+  }
+
+  .footer-section a {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .nav-item {
+    margin: 0 5px;
+  }
+
+  .banner-info h5 {
+    font-size: 24px;
+  }
+
+  .btn-secondary {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+}
+
+/* Add your preloader styles here */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+  /* Add your loading animation styles (e.g., spinning circle) */
+  display: block;
+  margin: 0 auto;
+  background-color: green;
+}
+
+#preloader-logo {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#preloader-logo img {
+  max-width: 100px; /* Adjust the size as needed */
+}
+
+#preloader-logo h2 {
+  color: #333;
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+#preloader-logo h2 span {
+  color: green;
+}
+
+
+/* <!-- Prelaoder --> */
+/* #preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #0078ff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+} */
