@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Quiz Hub - Full Stack Development</title>
+
+    <!-- Web Icon -->
+    <link rel="icon" href="../../assets/images/logo2.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../assets/fonts/font.css">
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="../assets/css/Bootstrap/bootstrap.min.css">
+
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/animation.css">
+
+    <!-- Thank You CSS -->
+    <link rel="stylesheet" href="../assets/css/thankyou.css">
+</head>
+
+<body>
+
+    <main id="main" class="overflow-hidden">
+        <div class="step-bar">
+            <div class="bar">
+                <div class="w-100 fill"></div>
+            </div>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+            <div class="bar">
+                <div class="fill"></div>
+            </div>
+        </div>
+        <form method="post" class="show-section" novalidate>
+
+            <!-- Step 1 - Full Stack Basics -->
+            <section class="steps">
+                <div class="step-inner">
+
+                    <!-- Step number -->
+                    <div class="step-number">
+                        Question 1/5
+                    </div>
+
+                    <!-- Question -->
+                    <div class="quiz-question">
+                        What is the primary language for server-side scripting in full-stack development?
+                    </div>
+
+                    <!-- Options -->
+                    <fieldset id="step1">
+                        <div class="row">
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left">
+                                    <input type="radio" name="op1" value="JavaScript">
+                                    <label>JavaScript</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-100">
+                                    <input type="radio" name="op1" value="Python">
+                                    <label>Python</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-200">
+                                    <input type="radio" name="op1" value="Java">
+                                    <label>Java</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-300">
+                                    <input type="radio" name="op1" value="Ruby">
+                                    <label>Ruby</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Next Previous -->
+                <div class="next-prev">
+                    <button class="next" id="step1btn" type="button">Next Question<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Step 2 - Full Stack Technologies -->
+            <section class="steps">
+                <div class="step-inner">
+
+                    <!-- Step number -->
+                    <div class="step-number">
+                        Question 2/5
+                    </div>
+
+                    <!-- Question -->
+                    <div class="quiz-question">
+                        Which technology is commonly used for front-end development in a full-stack application?
+                    </div>
+
+                    <!-- Options -->
+                    <fieldset id="step2">
+                        <div class="row">
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left">
+                                    <input type="radio" name="op2" value="Node.js">
+                                    <label>Node.js</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-100">
+                                    <input type="radio" name="op2" value="React">
+                                    <label>React</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-200">
+                                    <input type="radio" name="op2" value="Spring Boot">
+                                    <label>Spring Boot</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-300">
+                                    <input type="radio" name="op2" value="Express.js">
+                                    <label>Express.js</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Next Previous -->
+                <div class="next-prev">
+                    <button class="prev" type="button"><i class="fa-solid fa-arrow-left"></i>Last Question</button>
+                    <button class="next" id="step2btn" type="button">Next Question<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Step 3 - Database in Full Stack -->
+            <section class="steps">
+                <div class="step-inner">
+
+                    <!-- Step number -->
+                    <div class="step-number">
+                        Question 3/5
+                    </div>
+
+                    <!-- Question -->
+                    <div class="quiz-question">
+                        Which type of database is commonly used in full-stack development?
+                    </div>
+
+                    <!-- Options -->
+                    <fieldset id="step3">
+                        <div class="row">
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left">
+                                    <input type="radio" name="op3" value="SQL">
+                                    <label>SQL</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-100">
+                                    <input type="radio" name="op3" value="NoSQL">
+                                    <label>NoSQL</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-200">
+                                    <input type="radio" name="op3" value="MongoDB">
+                                    <label>MongoDB</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-300">
+                                    <input type="radio" name="op3" value="Firebase">
+                                    <label>Firebase</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Next Previous -->
+                <div class="next-prev">
+                    <button class="prev" type="button"><i class="fa-solid fa-arrow-left"></i>Last Question</button>
+                    <button class="next" id="step3btn" type="button">Next Question<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Step 4 - Version Control -->
+            <section class="steps">
+                <div class="step-inner">
+
+                    <!-- Step number -->
+                    <div class="step-number">
+                        Question 4/5
+                    </div>
+
+                    <!-- Question -->
+                    <div class="quiz-question">
+                        Which tool is commonly used for version control in full-stack development?
+                    </div>
+
+                    <!-- Options -->
+                    <fieldset id="step4">
+                        <div class="row">
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left">
+                                    <input type="radio" name="op4" value="Git">
+                                    <label>Git</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-100">
+                                    <input type="radio" name="op4" value="SVN">
+                                    <label>SVN</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-200">
+                                    <input type="radio" name="op4" value="Mercurial">
+                                    <label>Mercurial</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-300">
+                                    <input type="radio" name="op4" value="Perforce">
+                                    <label>Perforce</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Next Previous -->
+                <div class="next-prev">
+                    <button class="prev" type="button"><i class="fa-solid fa-arrow-left"></i>Last Question</button>
+                    <button class="next" id="step4btn" type="button">Next Question<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+
+            <!-- Step 5 - Deployment -->
+            <section class="steps">
+                <div class="step-inner">
+
+                    <!-- Step number -->
+                    <div class="step-number">
+                        Question 5/5
+                    </div>
+
+                    <!-- Question -->
+                    <div class="quiz-question">
+                        How is a full-stack web application commonly deployed?
+                    </div>
+
+                    <!-- Options -->
+                    <fieldset id="step5">
+                        <div class="row">
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left">
+                                    <input type="radio" name="op5" value="Docker">
+                                    <label>Docker</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-100">
+                                    <input type="radio" name="op5" value="Heroku">
+                                    <label>Heroku</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-200">
+                                    <input type="radio" name="op5" value="AWS">
+                                    <label>AWS</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3 tab-50">
+                                <div class="radio-field bounce-left delay-300">
+                                    <input type="radio" name="op5" value="FTP">
+                                    <label>FTP</label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Next Previous -->
+                <div class="next-prev">
+                    <button class="prev" type="button"><i class="fa-solid fa-arrow-left"></i>Last Question</button>
+                    <button class="next" id="sub" type="button">Submit<i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </section>
+        </form>
+    </main>
+
+    <!-- Result Loading -->
+    <div class="loadingresult">
+        <img src="../assets/images/loading.gif" alt="loading">
+    </div>
+
+    <!-- Thank You Page -->
+    <div class="main  thankyou-page">
+        <div class="main-inner">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="/assets/images/logo.png" alt="">
+                </div>
+                <div class="logo-text">
+                    ICT Quiz Hub.
+                </div>
+            </div>
+            <article>
+                <h1><span>Thank You</span> For Your Time!</h1>
+                <span>Your submission has been received</span>
+                <p>
+                    Thank you for participating in the Full Stack Development Quiz. Your knowledge is appreciated!
+                </p>
+            </article>
+            
+            <div class="social-media">
+                <button><a href="#"><i class="fa-brands fa-google"></i>Google</a></button>
+                <button><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></button>
+                <button><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></button>
+            </div>
+            <div class="mb-5 back-home">
+                <a href="../../index.html">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="error"></div>
+
+    <!-- bootstrap 5 -->
+    <script src="../assets/js/Bootstrap/bootstrap.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="../assets/js/jQuery/jquery-3.6.3.min.js"></script>
+
+    
+    <!-- <Thankyou JS -->
+        <script src="../assets/js/thankyou.js"></script>
+    <!-- Custom js -->
+    <script src="../assets/js/custom.js"></script>
+
+    <!--====== ANSWERS TO THE QUIZ QUESTIONS ABOVE =====-->
+
+    <!-- 1. What is the primary language for server-side scripting in full-stack development?
+   Answer: JavaScript
+
+    2. Which technology is commonly used for front-end development in a full-stack application?
+    Answer: React
+
+    3. Which type of database is commonly used in full-stack development?
+    Answer: NoSQL
+
+    4. Which tool is commonly used for version control in full-stack development?
+    Answer: Git
+
+    5. How is a full-stack web application commonly deployed?
+    Answer: Docker -->
+
+</body>
+
+</html>

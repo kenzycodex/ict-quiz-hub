@@ -1,0 +1,148 @@
+Good day ladies and gentlemen, esteemed guests, and distinguished dignitaries, I would like to extend my sincere gratitude and special honor to the local government chairman, Honourable Rasaq Olusola Ajala, for gracing us with his presence today. Your unwavering support and commitment to the community have not gone unnoticed.
+
+I also want to express my appreciation to all the other dignitaries present here, contributing significantly to the betterment of our society. Your presence adds great value to this occasion.
+
+A heartfelt thank you goes to our esteemed team of instructors and tutors, with special recognition to my favorite, Mr. K. Their guidance and expertise have been invaluable throughout this journey. Mr. K, your dedication to the development of our skills has made a lasting impact on all the students and learners present.
+
+To the students and learners, your commitment to personal and professional growth is commendable. Your presence here today reflects your dedication to the ideals of learning and progress.
+
+I am honored to stand before you today to present the culmination of countless hours of dedication, creativity, and hard work—the ICT Quiz Hub website.
+
+This project is a testament to the commitment of our team to provide an engaging and interactive platform for learning and skill development. As we delve into the various facets of this website, let me guide you through its key features.
+
+**1. Purpose and Vision:**
+The ICT Quiz Hub was conceived with a singular vision—to empower individuals in Full Stack Development, Graphics Design, and Desktop Publishing. Our goal is to foster a community of learners who are not only well-versed in these fields but are also driven to excel.
+
+**2. User-Friendly Design:**
+We prioritized a user-friendly design to ensure seamless navigation for all users. From the intuitive menu to the straightforward quiz-taking process, every aspect of the website is crafted to enhance the user experience.
+
+**3. Preloader and Visual Appeal:**
+The preloader, featuring the ICT Quiz Hub logo and a welcoming message, sets the stage for a visually appealing experience. We believe in making a positive first impression, and the preloader serves as the virtual red carpet for our visitors.
+
+**4. Dynamic Main Slider:**
+The main slider is a dynamic showcase of what the ICT Quiz Hub stands for. Each slide communicates a unique message, inviting users to explore and learn. The slider is not just a visual element; it's a narrative that unfolds as users navigate through the website.
+
+**5. Quizzes and Courses Section:**
+The heart of the ICT Quiz Hub lies in its quizzes and courses. We have meticulously curated content for Full Stack Development, Graphics Design, and Desktop Publishing. The quizzes challenge users, providing a valuable learning experience.
+
+**6. Testimonials and Success Stories:**
+The Testimonials section features the stories of individuals like Balogun Dominion, who have flourished through our programs. Real success stories inspire and motivate our users, showing them the tangible impact of their learning journey.
+
+**7. Latest Posts and Upcoming Events:**
+Our Latest Posts and Upcoming Events sections keep the community informed. Whether it's a new course announcement or a significant event, we ensure our users stay connected and engaged.
+
+**8. Responsive Design:**
+In this digital age, accessibility is key. The ICT Quiz Hub website is designed to be responsive, adapting seamlessly to various devices. Whether accessed from a desktop, tablet, or smartphone, the user experience remains optimal.
+
+In conclusion, the ICT Quiz Hub website is not just a digital platform; it's a gateway to knowledge, growth, and excellence. As we continue to expand our offerings and reach, we remain committed to providing an enriching experience for all learners.
+
+Once again, thank you for your attention and I invite you to explore the ICT Quiz Hub—a place where learning knows no bounds.
+
+Finally, I would like to express my deep appreciation to the local government chairman, Honourable Rasaq Olusola Ajala, for granting me the opportunity to showcase this presentation. Your support for initiatives like the ICT training development program is truly noteworthy and contributes significantly to the betterment of our community. We recognize and appreciate all the positive contributions you make, both big and small. Thank you.
+
+EXAM GUIDE UTME PRODUCT KEY : BRA4643WE9UTM6C
+
+
+Register application storage
+User-Admin email automation
+About Tutors change name
+Forget password functions
+Change some pictures if possible
+Add Quiz and its questions
+
+
+let preloader = document.querySelector('#preloader');
+
+if (preloader) {
+  window.addEventListener('load', () => {
+    // Additional 3 seconds delay
+    setTimeout(() => {
+      preloader.remove();
+    }, 3000);
+  });
+}
+
+// Function to display a message and an image in the center of the page
+const showMessageAndImage = (message, imagePath) => {
+  const container = document.createElement('div');
+  container.style.position = 'fixed';
+  container.style.top = '50%';
+  container.style.left = '50%';
+  container.style.transform = 'translate(-50%, -50%)';
+  container.style.textAlign = 'center';
+  container.style.zIndex = '1000';
+  container.style.padding = '10px';
+
+  container.style.width = '180px'; 
+  container.style.height = '140px'; 
+
+  // Add background color to the container
+  container.style.backgroundColor = '#31c4fc';
+
+  // Create and append the message element
+  const messageElement = document.createElement('div');
+  messageElement.innerText = message;
+  messageElement.style.textAlign = 'center';
+  messageElement.style.fontWeight = '700';
+  messageElement.style.color = 'white'; 
+  messageElement.style.fontSize = '20px'; 
+  container.appendChild(messageElement);
+
+  // Create and append the image element (loading GIF)
+  const imageElement = document.createElement('img');
+  imageElement.src = imagePath;
+  imageElement.alt = 'Loading';
+  imageElement.style.margin = '0 auto';
+  imageElement.style.width = '40px'; 
+  imageElement.style.marginTop = '8px'; 
+  container.appendChild(imageElement);
+
+  // Append the container to the body
+  document.body.appendChild(container);
+
+  // Remove the container after 10 seconds
+  setTimeout(() => {
+    document.body.removeChild(container);
+  }, 10000);
+};
+
+const userCreds = sessionStorage.getItem("user-creds");
+const signUpButton = document.querySelector('.sign-up');
+const applyButton = document.querySelector('.apply-here');
+let UserInfo = JSON.parse(sessionStorage.getItem("user-info"));
+let Greet = document.getElementById('greet');
+let autoText = document.getElementById('auto-text');
+
+if (userCreds) {
+    // User is logged in
+    signUpButton.textContent = 'Sign Out';
+    signUpButton.addEventListener('click', (event) => {
+        // Prevent default form submission
+        event.preventDefault();
+
+        // Display signout message and image
+        showMessageAndImage("Signing Out...", "/assets/images/loading.gif");
+
+        // Simulate a delay (3 seconds) before signing out
+        setTimeout(() => {
+        sessionStorage.removeItem("user-creds");
+        sessionStorage.removeItem("user-info");
+        window.location.href = 'FORM/login25.html';
+        }, 10000);
+
+    });
+
+    // Assuming UserInfo is an object with properties userName and fullName
+    const { userName, fullName } = UserInfo;
+    Greet.innerText = `${userName}!`;
+    autoText.innerText = `${fullName}`;
+    // Greet.innerText = `Hello ${userName}, ${fullName}!`;
+
+    applyButton.href = 'FORM/register.html';
+} else {
+    // User is not logged in
+    signUpButton.textContent = 'Sign Up';
+    signUpButton.href = 'FORM/register25.html';
+
+    applyButton.href = 'FORM/login25.html';
+}

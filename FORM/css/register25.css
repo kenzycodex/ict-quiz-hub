@@ -1,0 +1,21 @@
+.message {
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+    display: none;
+}
+
+.success {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+}
+
+input {
+    color: #fff !important;
+}
+  

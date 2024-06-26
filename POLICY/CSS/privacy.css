@@ -1,0 +1,102 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root
+{
+    --primary-color:  #4ead0efd;
+    --secondary-color: #002147;
+}
+
+/* Set the root font size and font family */
+html {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: var(--secondary-color);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style the container for the privacy policy content */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style the heading tags */
+h1, h2, h3, h4 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+/* Style paragraphs and set line height */
+p {
+    margin-bottom: 15px;
+}
+
+/* Style the unordered list */
+ul {
+    list-style: none;
+    margin-bottom: 15px;
+}
+
+/* Style list items */
+li {
+    margin-bottom: 5px;
+}
+
+/* Style links */
+a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Style the primary color for links on hover */
+a:hover {
+    color: darken(var(--primary-color), 10%);
+}
+
+/* Style the container for the privacy policy content */
+.container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+/* Style the header with a background color and padding */
+header {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+}
+
+/* Style the footer with a background color and padding */
+footer {
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Apply styles to specific elements based on their tag or class */
+header h1 {
+    font-size: 24px;
+}
+
+/* Apply responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    header h1 {
+        font-size: 20px;
+    }
+}
